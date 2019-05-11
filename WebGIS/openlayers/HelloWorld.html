@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Using Parcel with OpenLayers</title>
+    <!--<link rel="stylesheet" type="text/css" href="node_modules/v5.3.0-dist/ol.css"/>
+        <script src="node_modules/v5.3.0-dist/ol.js" type="text/javascript" charset="utf-8"></script>-->
+        <link rel="stylesheet" type="text/css" href="node_modules/ol/ol.css"/>
+        <script src="node_modules/ol/ol.js" type="text/javascript" charset="utf-8"></script>
+
+        <style>
+        #map {
+            width: 1000px;
+            height: 500px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 地图容器 -->
+    <div id="map"></div>
+    <script type="text/javascript">
+        //实例化Map对象用于加载地图
+        var map = new ol.Map({
+    		target:'map', //地图容器 div标签的id属性值（地图加载的目标HTML标签）
+
+            //在地图容器中加载的图层
+            layers:[
+                //加载瓦片图层数据
+                new ol.layer.Tile({
+                    //图层对应的数据源，此处为加载OpenStreetMap在线瓦片服务数据
+                    source: new ol.source.OSM()
+                })
+                ],
+
+            //地图视图设置
+            view: new ol.View({
+    			center:[12647802, 2729749,],  //地图初始中心点（经度, 纬度）
+    			zoom: 6  //地图初始显示级别
+    		})
+        });
+
+        //实例化ZoomSlider控件并加载到地图容器中
+        var zoomslider = new ol.control.ZoomSlider();
+        map.addControl(zoomslider);
+
+        //实例化ZoomToExtent控件并加载到地图容器中
+        var zoomToExtent = new ol.control.ZoomToExtent({
+            extent: [13100000, 4290000, 13200000, 5120000]
+        });
+        map.addControl(zoomToExtent);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>openLayers | 弹出</title>
+		
+		<!--openLayers标配-->
+		<link rel="stylesheet" type="text/css" href="node_modules/ol/ol.css"/>
+		<script src="node_modules/ol/ol.js" type="text/javascript" charset="utf-8"></script>
+		
+		  <style>
+		      .ol-popup {
+		        position: absolute;
+		        background-color: white;
+		        -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+		        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+		        padding: 15px;
+		        border-radius: 10px;
+		        border: 1px solid #cccccc;
+		        bottom: 12px;
+		        left: -50px;
+		        min-width: 280px;
+		      }
+		      .ol-popup:after, .ol-popup:before {
+		        top: 100%;
+		        border: solid transparent;
+		        content: " ";
+		        height: 0;
+		        width: 0;
+		        position: absolute;
+		        pointer-events: none;
+		      }
+		      .ol-popup:after {
+		        border-top-color: white;
+		        border-width: 10px;
+		        left: 48px;
+		        margin-left: -10px;
+		      }
+		      .ol-popup:before {
+		        border-top-color: #cccccc;
+		        border-width: 11px;
+		        left: 48px;
+		        margin-left: -11px;
+		      }
+		      .ol-popup-closer {
+		        text-decoration: none;
+		        position: absolute;
+		        top: 2px;
+		        right: 8px;
+		      }
+		      .ol-popup-closer:after {
+		        content: "✖";
+		      }
+		      
+		      #map{
+		      	width: 800px;
+		      	height: 500px;
+		      }
+		    </style>
+	</head>
+	<body>
+		
+		<!--地图容器-->
+		<div id="map" class="map"></div>
+		
+		<!--弹出框容器-->
+    	<div id="popup" class="ol-popup">
+      		<a href="#" id="popup-closer" class="ol-popup-closer"></a>
+      		<div id="popup-content"></div>
+    	</div>
+		<script src="Popup.js" charset="utf-8"></script>
+		
+		
+		<!--<script type="text/javascript">
+			/*
+			 * 构成弹出窗体的要素
+			 */
+			//1. 容器
+			var container = document.getElementById('popup');
+			alert(container);
+			//2. 内容
+			var content = document.getElementById('popup_content');
+			//3. 关闭
+			var closer = document.getElementById('popup_closer');
+			
+			
+			/*
+			 * 创建叠加层以将弹出窗口锚定到地图
+			 */
+			// 相当于一个地图元素（Element）变量
+			var overlay = new ol.Overlay({
+				element: container,  //变量的载体（容器）
+				autoPan: true,   //开启自动平移？？？
+				autoPanAnimation: {  //自动平移动画？？？
+					duration: 250	  //动画属性：持续事件？？？
+				}
+			});
+		</script>-->
+		
+		
+	</body>
+</html>
