@@ -315,7 +315,11 @@ var bookmarks = {
 		createURL("https://www.fbi.gov/", "Welcome to FBI.gov — FBI", "联邦调查局？？？"),
 		createURL("https://www.geogebra.org/graphing?lang=zh-CN", "图形计算器 - GeoGebra", "神奇的东东"),
 		createURL("https://tuna.moe/", "清华大学 TUNA 协会 - Home", "清华镜像？？？"),
-		createURL("https://www.ireus.uni-stuttgart.de/Internationales/WorldRiskIndex", "世界风险指数| 空间规划与发展规划研究所| 斯图加特大学", "神奇的东东")
+		createURL("https://www.ireus.uni-stuttgart.de/Internationales/WorldRiskIndex", "世界风险指数| 空间规划与发展规划研究所| 斯图加特大学", "神奇的东东"),
+                createURL("https://github.com/PKUanonym/REKCARC-TSC-UHT","清华计算机系课程资源","github资源"),
+                createURL("https://qsctech.github.io/zju-icicles/","浙大课程资源","github资源"),
+                createURL("https://github.com/USTC-Resource/USTC-Course","中科大课程资源","github资源"),
+                createURL("https://github.com/CoolPhilChen/SJTU-Courses","上交大课程资源","github资源")
 	]
 };
 
