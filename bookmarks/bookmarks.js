@@ -304,7 +304,8 @@ var bookmarks = {
 		createURL("https://openlayers.org/", "OpenLayers - Welcome", "WebGIS强大的API"),
 		createURL("https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/smart-choices-for-basemaps-and-color-ramps-when-mapping-demographic-data/","地图的底图和颜色渐变选择","一片很有趣的GIS地图制图技巧文章"),
 		createURL("https://developers.arcgis.com/labs/", "ArcGIS API for Developers", "GIS开发的样式档案"),
-		createURL("http://www.mnr.gov.cn/zt/ch/sbh_30619/gjbtzs/", "国家版图知识", "发布于中国自然资源部网站")
+		createURL("http://www.mnr.gov.cn/zt/ch/sbh_30619/gjbtzs/", "国家版图知识", "发布于中国自然资源部网站"),
+		createURL("http://bzdt.ch.mnr.gov.cn/index.jsp", "标准地图服务", "标准的世界地图和中国地图图片")
 	],
 	elses: [
 		createURL("http://gaohr.win/", "GaoHR | Homepage", "一位GIS领域的人物的个人网站"),
