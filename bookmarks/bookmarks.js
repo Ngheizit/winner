@@ -306,7 +306,8 @@ var bookmarks = {
 		createURL("https://developers.arcgis.com/labs/", "ArcGIS API for Developers", "GIS开发的样式档案"),
 		createURL("http://www.mnr.gov.cn/zt/ch/sbh_30619/gjbtzs/", "国家版图知识", "发布于中国自然资源部网站"),
 		createURL("http://bzdt.ch.mnr.gov.cn/index.jsp", "标准地图服务", "标准的世界地图和中国地图图片"),
-		createURL("http://dtsc.sbsm.gov.cn/dtsc/", "地图技术审查中心", "发布于国家测绘地理信息局")
+		createURL("http://dtsc.sbsm.gov.cn/dtsc/", "地图技术审查中心", "发布于国家测绘地理信息局"),
+		createURL("http://kmap.ckcest.cn/", "地理信息专业知识服务系统", "地图知识")
 	],
 	elses: [
 		createURL("http://gaohr.win/", "GaoHR | Homepage", "一位GIS领域的人物的个人网站"),
