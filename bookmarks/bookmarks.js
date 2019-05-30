@@ -283,7 +283,8 @@ var bookmarks = {
 		createURL("https://developers.arcgis.com/downloads/apis-and-sdks?product=javascript", "下载| ArcGIS for Developers", "反正是ArcGIS系列很高大上的东西"),
 		createURL("http://www.resdc.cn/Default.aspx", "中国科学院资源环境科学数据中心", "普通用户一天只能下5个，呵"),
 		createURL("https://earthquake.usgs.gov/earthquakes/search/", "Search Earthquake", "全球地震数据下载网站，很不错，更新神速"),
-		createURL("http://data.casearth.cn/", "地球大数据科学工程数据共享服务系统", "潜力很大的地理数据获取网站")
+		createURL("http://data.casearth.cn/", "地球大数据科学工程数据共享服务系统", "潜力很大的地理数据获取网站"),
+                createURL("http://www.rscloudmart.com/dataProduct/datacenterStandardData?level=free","高分1号16m分辨率影像下载地址","遥感集市数据中心")
 	],
 	gisShare: [
 		createURL("http://contest.esrichina.com.cn/", "ESRI大赛官网", "灵感源地"),
