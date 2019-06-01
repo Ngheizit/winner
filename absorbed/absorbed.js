@@ -322,7 +322,7 @@ var height = "0";
 var imgList = [];
 for (var i = 0; i < time.length; i++) {
 	var img = document.createElement("img");
-	img.setAttribute("src", "date/" + dayimg.year + "/" + dayimg.month + "/" + dayimg.day + "/" + dayimg.time[i]);
+	img.setAttribute("src", "data/" + dayimg.year + "/" + dayimg.month + "/" + dayimg.day + "/" + dayimg.time[i]);
 	img.setAttribute("class", "img");
 	img.setAttribute("width", "90%");
 	if(i == 0){
